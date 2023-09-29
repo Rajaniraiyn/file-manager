@@ -1,0 +1,45 @@
+/**
+ * @see https://www.electron.build/configuration/configuration
+ */
+{
+  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+  "appId": "com.fm.app",
+  "asar": true,
+  "directories": {
+    "output": "release/${version}"
+  },
+  "files": [
+    "dist",
+    "dist-electron"
+  ],
+  "linux": {
+    "artifactName": "${productName}-Linux-${version}.${ext}",
+    "target": [
+      "AppImage"
+    ]
+  },
+  "mac": {
+    "artifactName": "${productName}-Mac-${version}-Installer.${ext}",
+    "target": [
+      "dmg"
+    ]
+  },
+  "nsis": {
+    "allowToChangeInstallationDirectory": true,
+    "deleteAppDataOnUninstall": false,
+    "oneClick": false,
+    "perMachine": false
+  },
+  "productName": "File Manager",
+  "win": {
+    "artifactName": "${productName}-Windows-${version}-Setup.${ext}",
+    "target": [
+      {
+        "arch": [
+          "x64"
+        ],
+        "target": "nsis"
+      }
+    ]
+  }
+}

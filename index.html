@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Manager</title>
+  <!-- To Speed up development Material Symbols Rounded is used -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body>
+  <div id="app">
+    <div id="topbar">
+      <div id="tabs">
+        <i class="new-tab">add_circle</i>
+      </div>
+      <div id="window-controls">
+        <i id="minimize-contol">remove</i>
+        <i id="maximize-control">stop</i>
+        <i id="close-control">close</i>
+      </div>
+    </div>
+    <aside id="sidebar">
+      <div class="top quick-actions">
+        <i>content_copy</i>
+        <i>content_cut</i>
+        <i>content_paste</i>
+        <i>info</i>
+      </div>
+      <div class="middle pinned-folders">
+        <!-- Pinned Folders -->
+      </div>
+      <div class="bottom miscellaneous">
+        <span>
+          <i>settings</i>
+          Settings
+        </span>
+      </div>
+    </aside>
+    <nav id="nav">
+      <div class="left">
+        <i class="backward">arrow_back</i>
+        <i class="upward">arrow_upward</i>
+        <i class="forward">arrow_forward</i>
+      </div>
+      <div class="center">
+        <span id="breadcrumb">
+          <!-- Current Directory path -->
+        </span>
+      </div>
+      <div class="right">
+        <label for="search">
+          <i>search</i>
+          <input id="search" type="search">
+        </label>
+      </div>
+    </nav>
+    <main id="main">
+      <!-- All Files and Folders -->
+    </main>
+    <aside id="preview">
+      <!-- Preview for selected files -->
+      <p>Please click on some files to preview</p>
+    </aside>
+    <menu id="contextmenu">
+      <div class="context-menu for-file">
+        <li><i></i>Open</li>
+        <li><i>open_in_new</i>Open in new tab</li>
+        <li><i>file_copy</i>Copy</li>
+        <li><i>cut</i>Cut</li>
+        <li><i>content_paste</i>Paste</li>
+        <li><i>edit_square</i>Rename</li>
+        <li><i>delete</i>Delete</li>
+        <li><i>info</i>Info</li>
+      </div>
+      <div class="context-menu for-folder">
+        <li><i>folder_open</i>Open</li>
+        <li><i>open_in_new</i>Open in new tab</li>
+        <li><i>folder_copy</i> Copy</li>
+        <li><i>cut</i>Cut</li>
+        <li><i>content_paste</i>Paste</li>
+        <li><i>edit_square</i>Rename</li>
+        <li><i>folder_delete</i>Delete</li>
+        <li><i>info</i>Info</li>
+      </div>
+      <div class="context-menu for-empty">
+        <li><i>create_new_folder</i> Create new Folder</li>
+        <li><i>info</i> Info</li>
+      </div>
+    </menu>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

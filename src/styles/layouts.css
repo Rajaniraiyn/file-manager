@@ -1,0 +1,39 @@
+/* Main Layout */
+#app {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "topbar topbar topbar"
+        "sidebar nav nav"
+        "sidebar main preview";
+    grid-template-columns: 0.25fr 1fr 0.5fr;
+    grid-template-rows: auto auto 1fr;
+}
+
+#topbar {
+    grid-area: topbar;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+#nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+#main {
+    grid-area: main;
+    display: flex;
+}
+
+#preview {
+    grid-area: preview;
+    display: grid;
+}

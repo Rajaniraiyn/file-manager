@@ -1,0 +1,21 @@
+{
+  "name": "file-manager",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.7.1",
+    "electron": "^26.2.3",
+    "electron-builder": "^24.6.4",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-plugin-electron": "^0.14.1",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "vite-plugin-webfont-dl": "^3.7.6"
+  },
+  "main": "dist-electron/main.js"
+}

@@ -1,0 +1,31 @@
+#nav {
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    gap: 0.5em;
+    border-block-end: 1px solid hsla(var(--bg-color-hs), var(--bg-select-lightness), 0.5);
+    align-items: center;
+
+    & .left {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 0.5em;
+
+        & i {}
+
+    }
+
+    & .right label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+
+        & input {}
+
+        &:not(:hover, :focus-within) input {
+            display: none;
+            opacity: 0;
+        }
+
+    }
+}

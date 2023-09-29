@@ -1,0 +1,14 @@
+#preview {
+    place-items: center;
+    padding: 2em;
+    text-align: center;
+    border-inline-start: 1px solid hsla(var(--bg-color-hs), var(--bg-select-lightness), 0.5);
+
+    & *:not(p) {
+        overflow: scroll;
+        max-width: 20vw;
+        max-height: 100%;
+        border-radius: 1em;
+    }
+
+}

@@ -1,0 +1,36 @@
+:root {
+    --primary-color: hsl(220, 100%, 50%);
+    --primary-hue: 211;
+    --primary-saturation: 100%;
+    --primary-lightness: 50%;
+
+    --text-color-hs: 0, 0%;
+    --bg-color-hs: 0, 0%;
+    --text-color: hsl(var(--text-color-hs), var(--text-lightness));
+    --bg-color: hsla(var(--bg-color-hs), var(--bg-lightness), 0.1);
+}
+
+@media (prefers-color-scheme: light) {
+
+    :root {
+        --text-lightness: 20%;
+        --bg-lightness: 100%;
+        --bg-select-lightness: calc(var(--bg-lightness)/1.25);
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --text-lightness: 80%;
+        --bg-lightness: 20%;
+        --bg-select-lightness: calc(var(--bg-lightness)*2);
+    }
+
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
