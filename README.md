@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/Rajaniraiyn/file-manager/assets/72294760/c8ce62c0-e510-4577-a93d-c4f2f3c5ac7e" width="100" />
+<img src="https://github.com/Rajaniraiyn/file-manager/assets/72294760/f00144b8-29e7-480d-ae7d-f0b81b9d2938" width="100" />
 
 # File Manager
 
@@ -12,14 +12,14 @@ _A simple and beautiful cross-platform File Manager._
 
 <details>
   <summary>Click here for the Video</summary>
-  
-  https://github.com/Rajaniraiyn/file-manager/assets/72294760/098f2299-b640-4d44-a777-b2bd2aace591
+
+  https://github.com/Rajaniraiyn/file-manager/assets/72294760/d2aefd10-384c-495c-85ec-8409573b4482
   
 </details>
 
 ## Features
 
-### Available
+### Completed
 
 - File and Folder Navigation
 - File Preview
@@ -31,7 +31,7 @@ _A simple and beautiful cross-platform File Manager._
 - Backgound Process (Tray App)
 - Clean UI
 
-### Partialy Available
+### Partial
 
 - Cut, Copy and Paste
 - Rename
@@ -39,7 +39,7 @@ _A simple and beautiful cross-platform File Manager._
 - Create Folder
 - Delete Files and Folders
 
-### Not Available
+### Planned
 
 - Search
 - Multi-select
