@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.7.1",
-    "electron": "^26.2.4",
+    "electron": "^35.7.5",
     "electron-builder": "^24.6.4",
     "typescript": "^5.2.2",
     "vite": "^5.4.21",
